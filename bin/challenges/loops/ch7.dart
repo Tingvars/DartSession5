@@ -32,5 +32,12 @@
 import 'dart:io';
 
 void main() {
+  bool condition = true;
 
+  while (condition) {
+  print("Please enter the number 100");
+  int userNumber = int.parse(stdin.readLineSync()!);
+  condition = userNumber != 100;
+  }
+print("Well done!");
 }
